@@ -1,0 +1,25 @@
+#section1 > #productList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section2 > img{
+    margin: 10%;
+    width: 50%;
+   
+}
+#section2{
+    justify-content: center;
+    background-color: beige;
+    margin: 5%;
+    padding: 5%;
+}
+
+#section2 > button{
+    
+    cursor: pointer;
+    border-radius: 10%;
+    padding: 2%;
+    background-color: peachpuff;
+    border: none;
+}

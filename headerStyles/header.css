@@ -1,0 +1,61 @@
+header{
+    width: 100%;
+}
+/* ................styling for row1 */
+
+#row1{
+    display: flex;
+    margin: 0px;
+    padding:10px;
+    background-color: lightcyan;
+    justify-content: center;
+}
+
+/*................. styling for row2 */
+#row2{
+   
+    display: flex;
+    margin: 0%;
+    gap: 4%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+#row2 > #nav{
+    margin: 2%;
+    display: flex;
+    transition: opacity 0.3s ease;
+    gap: 5%;
+    text-decoration: none;
+  color: black;    
+}
+
+#row2 > #search_bar{
+    width: 10%;
+    height: 5%;
+}
+
+
+#row2 > #search_bar{
+    width: 30%;
+}
+
+#row2 > h2 img{
+   width: 10%;
+}
+#row2 
+/* .........................styling for row3 */
+
+#row3 {
+    background-color: cornflowerblue;
+   text-align: center;
+}
+
+#row3>select {
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+}
+

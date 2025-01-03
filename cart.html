@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | GlowZone</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://img.freepik.com/premium-vector/graceful-glow-monochrome-beauty-face-logo_68880-101572.jpg" alt="GlowZone Logo">
+        <h2>GlowZoneCare</h2>
+      </div>
+      <!-- <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html" id="cart-link">Cart <span id="cart-count">0</span></a></li>
+        <li><a href="wishlist.html">Wishlist <span id="wishlist-count">0</span></a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul> -->
+    </nav>
+  </header>
+
+  <!-- Cart Section -->
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items">
+      <!-- Cart items will be dynamically injected here -->
+    </div>
+    <div id="cart-summary">
+      <h3>Cart Summary</h3>
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Price: $<span id="total-price">0.00</span></p>
+      <button onclick="clearCart()">Clear Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GlowZone. All Rights Reserved.</p>
+  </footer>
+</body>
+<script src="./script/script.js"></script>
+<script src="./script/interactivescript.js"></script>
+<script src="./script/account.js"></script>
+</html>
