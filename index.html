@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./headerStyles/header.css">
-    <link rel="stylesheet" href="./headerStyles/footer.css">
-    <link rel="stylesheet" href="./headerStyles/index.css">
-    <link rel="stylesheet" href="./headerStyles/sections.css">
-    <link rel="stylesheet" href="./headerStyles/account.css">
-
+    <link rel="stylesheet" href="./Styles/cart.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/sections.css">
+    <link rel="stylesheet" href="./Styles/account.css">
 </head>
 
 <body>
@@ -75,7 +74,10 @@
         <div id="wishlistList"></div>
     </section>
     <section id="section2">
-        <button>Want Glow skin Click here...</button>
+        <button onclick="revealMessage()">Want Glow skin Click here...</button>
+        <img style="display: none;" id="hiddenMessage"
+            src="https://cdn.shopify.com/s/files/1/0276/9908/5406/files/Suja-Tips-for-Glowing-Skin-500x500.png"
+            alt="way to glow">
     </section>
 </body>
 
@@ -84,8 +86,13 @@
     <p>&copy; 2025 GlowZone. All Rights Reserved.</p>
 </footer>
 
-<script src="./headerScripts/header.js"></script>
-<script src="./headerScripts/nav.js"></script>
-<script src="./headerScripts/sections.js"></script>
+<script src="./Scripts/header.js"></script>
+<script src="./Scripts/nav.js"></script>
+<script src="./Scripts/sections.js"></script>
+<script src="./Scripts/wishlist.js"></script>
+<script src="./Scripts/products.js"></script>
+<script src="./Scripts/index.js"></script>
+<script src="./Scripts/cart.js"></script>
+<script src="./Scripts/account.js"></script>
 
 </html>

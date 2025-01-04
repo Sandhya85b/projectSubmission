@@ -1,0 +1,26 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Glow Serum",
+        "price": 25.99,
+        "image": "https://via.placeholder.com/150"
+      },
+      {
+        "id": 2,
+        "name": "Hydrating Moisturizer",
+        "price": 19.99,
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "email": "user@example.com",
+        "password": "password123"
+      }
+    ],
+    "cart": [],
+    "wishlist": []
+  }
+  

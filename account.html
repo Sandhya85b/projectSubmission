@@ -5,38 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" href="./headerStyles/header.css">
-    <link rel="stylesheet" href="./headerStyles/footer.css">
-    <link rel="stylesheet" href="./headerStyles/index.css">
-    <link rel="stylesheet" href="./headerStyles/sections.css">
+    <link rel="stylesheet" href="./Styles/cart.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/sections.css">
+    <link rel="stylesheet" href="./Styles/account.css">
 </head>
-
-
 <body>
     <header>
-        <!-- This is row1 in header -->
-        <p id="row1">Sale on sale: Up to 40% off + Extra 10% off sale items. Code: EXTAR10</p>
-
-        <!-- This is row2 in header -->
-        <div id="row2">
-            <h2> <img
+        <nav class="navbar">
+            <div class="logo">
+                <img id="img"
                     src="https://img.freepik.com/premium-vector/graceful-glow-monochrome-beauty-face-logo_68880-101572.jpg"
-                    alt="GlowZone Logo">GlowZoneCare</h2>
-            <input id="search_bar" type="text" placeholder="Search for a product or brand">
-            <div id="nav">
+                    alt="GlowZone Logo">
+                <h2>GlowZoneCare</h2>
             </div>
-        </div>
+            <ul class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html" id="cart-link">Cart <span id="cart-count">0</span></a>
+                <a href="wishlist.html">Wishlist <span id="wishlist-count">0</span></a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="account.html">Account</a>
+            </ul>
+        </nav>
     </header>
 
-    <script src="./headerScripts/header.js"></script>
-    <script src="./headerScripts/nav.js"></script>
-    <div style="display: grid;background-color: beige; margin: 5%; padding: 7%; gap: 10%;font-size: 100%;" id="navAccount">
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="forgotPassword.html">Forgot Password</a>
-        <a href="favourites.html">Your Favourites</a>
-        <a href="orders.html">Your Orders</a>
-    </div>
+    <!-- Account Section -->
+    <section class="account-section">
+        <h2>Manage Your Account</h2>
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <h3>Log In</h3>
+            <form id="login">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div id="signup-form" style="display: none;">
+            <h3>Sign Up</h3>
+            <form id="signup">
+                <input type="text" id="signup-name" placeholder="Full Name" required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+        </div>
+
+        <!-- Account Info -->
+        <div id="account-info" style="display: none;">
+            <h3>Welcome, <span id="user-name"></span></h3>
+            <p>Email: <span id="user-email"></span></p>
+            <button id="logout">Log Out</button>
+        </div>
+    </section>
+
 </body>
 
 <!-- Footer -->
@@ -44,9 +74,13 @@
     <p>&copy; 2025 GlowZone. All Rights Reserved.</p>
 </footer>
 
-<script src="./headerScripts/header.js"></script>
-<script src="./headerScripts/account.js"></script>
-<script src="./headerScripts/nav.js"></script>
-
+<script src="./Scripts/header.js"></script>
+<script src="./Scripts/nav.js"></script>
+<script src="./Scripts/sections.js"></script>
+<script src="./Scripts/wishlist.js"></script>
+<script src="./Scripts/products.js"></script>
+<script src="./Scripts/index.js"></script>
+<script src="./Scripts/cart.js"></script>
+<script src="./Scripts/account.js"></script>
 
 </html>
